@@ -45,5 +45,10 @@ module.exports = {
     }),
     new CaseSensitivePaths(),
     new ExtractTextWebpackPlugin({filename: 'style.css', allChunks: true, disable: false})
-  ]
+  ],
+  resolve: {
+    alias: {
+      components: path.resolve(__dirname, 'src', 'components')
+    }
+  }
 }
