@@ -2,17 +2,28 @@ import React from 'react'
 import { Link } from 'react-router'
 
 import ROUTES from 'router/routes'
-import style from './style.css'
 
-class App extends React.Component {
+class Example extends React.Component {
+  constructor (props) {
+    super(props)
+
+    this.onClick = this.onClick.bind(this)
+  }
+
+  onClick () {
+    this.props.flipTest()
+  }
+
   render () {
     return (
-      <div className={style.container}>
+      <div>
         Test app
-        <Link to={ROUTES.EXAMPLE}>Example link</Link>
+        <Link to={ROUTES.EXAMPLE}>Example Link</Link>
+        <label htmlFor='test'>Test?</label>
+        <input type='checkbox' id='test' onClick={this.onClick} value={this.props.test} />
       </div>
     )
   }
 }
 
-export default App
+export default Example

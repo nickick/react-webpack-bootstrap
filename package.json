@@ -33,6 +33,7 @@
     "pre-commit": "~1.2.2",
     "react": "~15.4.2",
     "react-dom": "~15.4.2",
+    "react-redux": "~5.0.2",
     "react-router": "~3.0.2",
     "simple-git": "~1.66.0",
     "standard": "~8.6.0",
@@ -41,7 +42,10 @@
     "webpack": "~2.2.1",
     "webpack-dev-server": "~2.4.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "redux": "~3.6.0",
+    "redux-thunk": "~2.2.0"
+  },
   "pre-commit": [
     "test"
   ]
