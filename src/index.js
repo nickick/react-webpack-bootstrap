@@ -3,7 +3,7 @@ import { render } from 'react-dom'
 import 'normalize.css/normalize.css'
 import './global.css'
 
-import App from 'components/app'
+import Router from 'router'
 
 const entryNode = document.getElementById('app')
-render(<App />, entryNode)
+render(<Router />, entryNode)
